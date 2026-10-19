@@ -6,14 +6,19 @@ namespace G26W06WFCounter {
             InitializeComponent();
         }
 
+
         private void OnAdd(object sender, EventArgs e) {
             labelCount.Text = $"{++count}";
             //labelCount.Text = (++count).ToString();
             //labelCount.Text = "" + ++count;
         }
 
-        private void button1_Click(object sender, EventArgs e) {
+        private void OnSub(object sender, EventArgs e) {
             labelCount.Text = $"{--count}";
+        }
+
+        private void OnReset(object sender, EventArgs e) {
+            labelCount.Text = $"0";
         }
     }
 }
