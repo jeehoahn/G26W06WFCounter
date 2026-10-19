@@ -11,5 +11,9 @@ namespace G26W06WFCounter {
             //labelCount.Text = (++count).ToString();
             //labelCount.Text = "" + ++count;
         }
+
+        private void button1_Click(object sender, EventArgs e) {
+            labelCount.Text = $"{--count}";
+        }
     }
 }
